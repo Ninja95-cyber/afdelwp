@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>AFDeL</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://ninja95-cyber.github.io/afdelwp/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<style id="wp-block-library-theme-inline-css" type="text/css">
+#start-resizable-editor-section{display:none}.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-code{font-family:Menlo,Consolas,monaco,monospace;color:#1e1e1e;padding:.8em 1em;border:1px solid #ddd;border-radius:4px}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-group.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto;opacity:.4}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}#end-resizable-editor-section{display:none}
+</style>
+<link rel="stylesheet" id="accesspress-parallax-google-fonts-css" href="//fonts.googleapis.com/css?family=Roboto%3A400%2C300%2C500%2C700%7COxygen%3A400%2C300%2C700%7CQuicksand%3A400%2C500%2C600%2C700%7CPoppins%3A300%2C400%2C500%2C600&ver=5.8" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="nivo-lightbox-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/css/nivo-lightbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/css/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="slick-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/css/slick.css" type="text/css" media="all">
+<link rel="stylesheet" id="accesspress-parallax-woocommerce-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/woocommerce/ap-parallax-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="accesspress-parallax-style-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/style.css" type="text/css" media="all">
+<style id="accesspress-parallax-style-inline-css" type="text/css">
+
+                    .main-navigation > ul > li.current a,
+                    .main-navigation li:hover > a,
+                    .blog-list .blog-excerpt .posted-date,
+                    .woocommerce p.stars a,
+                    .product_meta a,
+                    .woocommerce-MyAccount-navigation a,
+                    .woocommerce-MyAccount-content a,
+                    .woocommerce-cart-form__cart-item a,
+                    .woocommerce-info a,                    
+                    body:not(.home) .main-navigation .current_page_item > a,
+                    body:not(.home) .main-navigation .current-menu-item > a,
+                    h4.blog-post-title a:hover,
+                    h4.portfolio-post-title a:hover{
+                        color: #22249b;
+                    }
+                    #main-slider .slick-dots li.slick-active button,
+                    .slider-caption .caption-description a:hover, .btn:hover,
+                    .testimonial-listing .slick-arrow:hover,
+                    .blog-list .blog-excerpt span,
+                    .woocommerce ul.products li.product .onsale, .woocommerce span.onsale,
+                    .woocommerce ul.products li.product .button,
+                    .parallax-section .wpcf7-form .wpcf7-submit, #go-top,
+                    .posted-on,
+                    .pagination .nav-links a, .pagination .nav-links span,
+                    .woocommerce nav.woocommerce-pagination ul li a,
+                    .woocommerce nav.woocommerce-pagination ul li span,
+                    .woocommerce #respond input#submit.alt,
+                    .woocommerce a.button.alt, .woocommerce button.button.alt,
+                    .woocommerce input.button.alt,
+                    .woocommerce #respond input#submit:hover,
+                    .woocommerce a.button:hover, .woocommerce button.button:hover,
+                    .woocommerce input.button:hover,
+                    .woocommerce #respond input#submit:hover,
+                    .woocommerce a.button:hover, .woocommerce button.button:hover,
+                    .woocommerce input.button:hover{
+                        background: #22249b;
+                    }
+                    .woocommerce #respond input#submit.alt:hover,
+                    .woocommerce a.button.alt:hover,
+                    .woocommerce button.button.alt:hover,
+                    .woocommerce input.button.alt:hover{
+                        background: #1f208c; 
+                    }
+                    #masthead.header-bottom-border,
+                    #main-slider .slick-dots li.slick-active button,
+                    .slider-caption .caption-description a:hover, .btn:hover,
+                    .team-image:hover, .team-image.slick-current,
+                    .testimonial-listing .slick-arrow:hover,
+                    .blog-list .blog-excerpt,
+                    #secondary h2.widget-title{
+                        border-color: #22249b;
+                    }
+                    #secondary h2.widget-title{
+                        border-color: #22249b;
+                    }@media screen and (max-width: 1000px){
+            .main-navigation > ul,
+            .menu-toggle
+            {
+                background-color: #22249b;
+            }
+        }
+                    .posted-on:before{
+                        border-color: transparent transparent #1b1d7c #1b1d7c;
+                    }
+</style>
+<link rel="stylesheet" id="accesspress-parallax-responsive-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all">
+<style id="elementor-frontend-inline-css" type="text/css">
+@font-face{font-family:eicons;src:url(https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel="stylesheet" id="elementor-post-10-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/elementor/css/post-10.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor-pro/assets/css/frontend.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/elementor/css/global.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-57-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/elementor/css/post-57.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto&ver=5.8" type="text/css" media="all">
+<link rel="stylesheet" id="google-earlyaccess-2-css" href="https://fonts.googleapis.com/earlyaccess/opensanshebrew.css?ver=5.8" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css" type="text/css" media="all">
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+
+
+
+
+
+
+<style type="text/css" media="all">.ap-home #section-0{ background:url() no-repeat scroll top left ; background-size:auto; color:#000000}
+.ap-home #section-0 .overlay { background:url(https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/images/overlay0.png);}
+</style>
+<script>
+</script>
+<link rel="icon" href="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/cropped-Untitled-1-32x32.png" sizes="32x32">
+<link rel="icon" href="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/cropped-Untitled-1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/cropped-Untitled-1-180x180.png">
+<meta name="msapplication-TileImage" content="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/cropped-Untitled-1-270x270.png">
+    </head>
+    <body class="home page-template page-template-elementor_header_footer page page-id-57 wp-embed-responsive ap-parallax columns-3 elementor-default elementor-template-full-width elementor-kit-10 elementor-page elementor-page-57">
+                <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+        <div id="page" class="hfeed site">
+            
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/afdelesotho" class="facebook" data-title="Facebook" target="_blank"><i class="fa fa-facebook"></i><span></span></a>
+        
+                    <a href="https://www.twitter.com/afdelesotho" class="twitter" data-title="Twitter" target="_blank"><i class="fa fa-twitter"></i><span></span></a>
+        
+        
+        
+        
+                    <a href="https://www.linkedin.com/in/academic-forum-for-development-of-lesotho-79b838219/" class="linkedin" data-title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i><span></span></a>
+        
+        
+        
+        
+            </div>
+
+    
+                            <header id="masthead" class="header-transparent ">
+                <div class="mid-content clearfix">
+                    <div class="flex-box">
+                        <div id="site-logo">
+                                                            <h1 class="site-title"><a href="https://ninja95-cyber.github.io/afdelwp/" rel="home">AFDeL</a></h1>
+                                <h2 class="site-description"></h2>
+                                                    </div>
+
+                        <nav id="site-navigation" class="main-navigation">
+
+                            <button class="toggle menu-toggle">Menu</button>
+
+                            <ul id="menu-menu-1" class="menu"><li id="menu-item-82" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-82"><a href="#">Conference 2021</a><span class="menu-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+<ul class="sub-menu">
+	<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-57 current_page_item menu-item-58"><a href="https://ninja95-cyber.github.io/afdelwp/" aria-current="page">Call for paper, Posters & Workshop</a></li>
+	<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="https://ninja95-cyber.github.io/afdelwp/publications/">Publications</a></li>
+	<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="https://ninja95-cyber.github.io/afdelwp/fees-payments/">Fees & Payments</a></li>
+	<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://ninja95-cyber.github.io/afdelwp/tentative-program/">Tentative Program</a></li>
+	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://ninja95-cyber.github.io/afdelwp/committee/">Committee</a></li>
+</ul>
+</li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-46"><a href="https://ninja95-cyber.github.io/afdelwp/download/">Download</a><span class="menu-icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+<ul class="sub-menu">
+	<li id="menu-item-78" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-78"><a href="https://drive.google.com/drive/u/0/folders/15E4B7Ds3HTrDhrDNQxTRXEFP02T_g6fc">Template Paper(Word)</a></li>
+	<li id="menu-item-80" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80"><a href="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/AFDeL-Brochure-2020-FINAL3.docx">Brochure</a></li>
+	<li id="menu-item-81" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81"><a href="https://drive.google.com/drive/folders/15E4B7Ds3HTrDhrDNQxTRXEFP02T_g6fc?usp=sharing">Template Paper(Latex)</a></li>
+</ul>
+</li>
+<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="https://ninja95-cyber.github.io/afdelwp/contact-us/">Contact Us</a></li>
+</ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+                        <div id="content" class="site-content no-slider">
+                
+        		<div data-elementor-type="wp-page" data-elementor-id="57" class="elementor elementor-57" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-3a75674 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="3a75674" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2610d93" data-id="2610d93" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-2999806 elementor--h-position-center elementor--v-position-middle elementor-arrows-position-inside elementor-pagination-position-inside elementor-widget elementor-widget-slides" data-id="2999806" data-element_type="widget" data-settings='{"navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","transition":"slide","transition_speed":500}' data-widget_type="slides.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-swiper">
+			<div class="elementor-slides-wrapper elementor-main-swiper swiper-container" dir="ltr" data-animation="fadeInUp">
+				<div class="swiper-wrapper elementor-slides">
+					<div class="elementor-repeater-item-4268749 swiper-slide"><div class="swiper-slide-bg"></div><div class="elementor-background-overlay"></div><div class="swiper-slide-inner"><div class="swiper-slide-contents"></div></div></div>				</div>
+							</div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d6b1b7d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d6b1b7d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-63b0345" data-id="63b0345" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e88afd8 elementor-widget elementor-widget-heading" data-id="e88afd8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ACADEMIC FORUM FOR DEVELOPMENT OF LESOTHO
+THINK TANK ONLINE CONFERENCE
+</h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-dcf5792 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="dcf5792" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e8f25d" data-id="9e8f25d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0eba269 elementor-widget elementor-widget-heading" data-id="0eba269" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">A Pan-Africanist Outlook to the Life & Future of Lesotho as an Enclave of South Africa:
+
+ 
+</h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-66b5535 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="66b5535" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e671a13" data-id="e671a13" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9419f22 elementor-widget elementor-widget-heading" data-id="9419f22" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">The People’s Voice 
+in the Run-up to Lesotho 2022 National Election & Beyond
+ 
+</h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9153e35 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9153e35" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1d625e3" data-id="1d625e3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c7e4b65 elementor-widget elementor-widget-heading" data-id="c7e4b65" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">BACKGROUND</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-da0497f elementor-widget elementor-widget-image" data-id="da0497f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="150" height="140" src="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/Afdel-Logo-e1629129499131.jpg" class="attachment-large size-large" alt="" loading="lazy">															</div>
+				</div>
+				<div class="elementor-element elementor-element-b823c48 elementor-widget elementor-widget-heading" data-id="b823c48" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-small"></p><p>Lesotho and Republic of South Africa (RSA)’s geographical location places Lesotho in a position of an enclave, similar to that of only two other territories in the world; namely, the Republic of San Marino and the Vatican City, both of which are completely surrounded by their more powerful and richer neighbour, Italy. In order to ameliorate socio-economic implications that the status of these territories can have on the lives of peoples of Italy, Vatican and San Marino, there is an arrangement of open borders which allows free movement of people and commerce, with citizens of the three territories enjoying social and economic rights in all territories.</p><p>
+
+</p><p>Between Lesotho and RSA, however, borders between the two countries are strictly monitored and controlled, including patrols by the army and other security personnel. It is Basotho who are at the receiving end of these containment measures as they cannot easily enter into the Republic to access socio-economic services of their better-endowed neighbour. It is a socio-economic relationship in which majority of Basotho suffer inequities that profoundly affect their ability to live quality lives in line with the set global Sustainable Development Goals (SDGs). In terms of sustainability of the biophysical environment, water supply is a perhaps the most critical bonding factor between the two countries, yet wetlands and river sources from which this water comes, in Lesotho, are subjected to destructive anthropogenic pressures largely due to predominantly land depended economy in Lesotho. </p><p> 
+</p>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5ad09f2" data-id="5ad09f2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-3996b40 elementor-widget elementor-widget-heading" data-id="3996b40" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">EXPLAINING BASOTHO’S EXPERIENCES OF LESOTHO-RSA RELATIONS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c066654 elementor-widget elementor-widget-heading" data-id="c066654" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-small"></p><p>There is little agreement on why Basotho’s experiences of their country’s relationship with RSA should be what they are. For some, the explanation is structural, and has to do with the quantity and quality of size of Basotho’s territory; namely, the limited territorial extent and inadequate economic endowments. For others, the country has lacked leadership that has failed in, at least, two ways. First, failure to marshal and distribute the country’s limited resources in an equitable manner. Second, lack of imaginativeness necessary to fully appreciate ways in which current Lesotho/RSA relations have a bearing on the Basotho’s ability to live better lives. In turn, this failure has meant that, over the last 50 years, Lesotho’s ruling elite have not explored ways in which current Lesotho/RSA relations can be changed with a view to relieve Basotho of hardships associated with the country’s internal socio-economic arrangements, on the one hand, and the current Lesotho/RSA relations, on the other. 
+
+</p><p>However, all analysts and observers agree that some combination of Lesotho’s limited resources, on the one hand, and lack of imagination among those who have ruled the country, on the other, means that the state lacks capacity to:</p>
+ <ol>
+<li> fund and manage public institutions in ways that can ensure good governance;</li>
+<li> provide society with adequate public services in health and education; and
+</li>
+<li>provide society with adequate socio-economic security.</li>
+</ol>
+
+Current relations between LS and RSA mean that Basotho cannot access these services and socio-economic security without enormous hardships at Lesotho/SA borders. As is known, one result of Lesotho’s structural and other circumstances is that, the country has experienced unceasing political instability since independence, and, in that time, majority of Basotho have suffered untold socio-economic insecurity that violate their fundamental right to human dignity.
+		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-657469f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="657469f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f7fee46" data-id="f7fee46" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6f2c33f elementor-widget elementor-widget-heading" data-id="6f2c33f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">With a view to explore an inclusive and sustainable development in Lesotho, the conference will:<br><br><b> </b><b style="">(a) examine more in-depth explanations for Basotho’s experience of their country’s relationship with SA, and<br> (b) propose relationship, or relationships, that can best address inequities Basotho suffer under the current relationship between the two countries</b><i>.</i> <br><br>This Conference will provide a platform on which participants can examine the various aspects of the current relationship of Lesotho and RSA.   </p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fa3c105 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fa3c105" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3dbb7f3" data-id="3dbb7f3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-033e37e elementor-widget elementor-widget-heading" data-id="033e37e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">CONFERENCE THEME </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7abf197 elementor-widget elementor-widget-heading" data-id="7abf197" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Guided by the overarching theme, “A Pan-Africanist Outlook to the Life & Future of Lesotho as an Enclave of South Africa: The People’s Voice in the Run-up to Lesotho 2022 National Election & Beyond”, and in order to focus the Basotho electorate on pertinent sustainability issues for the 2022 national elections, the conference will focus on the following sub-themes:</p>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-b6e915e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b6e915e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3b77b88" data-id="3b77b88" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-e7cd34b elementor-widget elementor-widget-text-editor" data-id="e7cd34b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li><em>A Pan-Africanist Outlook of the relationship between Lesotho & South Africa</em></li><li><em>Lesotho’s existence as an enclave of South Africa</em></li><li><em>Borders and Migration between Lesotho & South Africa</em></li><li><em>Political and Socio-Economic relationship between Lesotho & South Africa</em></li><li><em>Evolution of the current relationship between Lesotho & South Africa</em></li></ul>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-71894a0" data-id="71894a0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-ea682e1 elementor-widget elementor-widget-text-editor" data-id="ea682e1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ul><li><em>The relationship between Lesotho & South Africa in relation quality Basic and Higher Education;</em></li><li><em>The relationship between Lesotho & South Africa in relation to quality health services; </em></li><li><em>The relationship between Lesotho & South Africa in relation to environmental sustainability, Tourism & Climate Change</em></li><li><em>The relationship between Lesotho & South Africa in relation to business & economy.</em></li><li>Any<em> other sub-themes that speak to the overarching theme of this conference</em></li></ul>						</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-2132651 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2132651" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9aa186b" data-id="9aa186b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f9e30c4 elementor-widget elementor-widget-heading" data-id="f9e30c4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">INVITED PRESENTATIONS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1b85c7e elementor-widget elementor-widget-heading" data-id="1b85c7e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">	We invite presentations in following formats.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-529516e elementor-widget elementor-widget-text-editor" data-id="529516e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<ol><li><strong>Long paper</strong> of up to 6000 words.</li><li><strong>Short paper</strong> of 1500 words.</li><li><strong>Snapshot paper</strong> of 1000 words.</li><li>We welcome other forms of presentations that those wishing to participate may propose.</li><li>Abstracts must be submitted by<strong> dd-mm-yyy. </strong>Please use the template provided to prepare for your abstracts and must be submitted through the <strong><a href="https://easychair.org/conferences/?conf=iace2019">EasyChair System</a></strong>.</li></ol>						</div>
+				</div>
+				<div class="elementor-element elementor-element-e5d0883 elementor-widget elementor-widget-heading" data-id="e5d0883" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PRESENTATION SESSIONS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-bca2c24 elementor-widget elementor-widget-heading" data-id="bca2c24" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">All presentations session will be allowed forty minutes, of which 15 minutes shall be presentation of paper, and 25 minutes for questions/comments/discussion.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c95ec01 elementor-widget elementor-widget-heading" data-id="c95ec01" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PRESENTATION FORMATS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6217854 elementor-widget elementor-widget-heading" data-id="6217854" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">1. Plenary Sessions </p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-608cc93 elementor-widget elementor-widget-heading" data-id="608cc93" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">	Conference Organisers will select papers that may be deemed to fit plenary sessions. This may be done by picking such papers from submissions of intending participants, or by inviting such papers from colleagues. Alternatively, Organisers may invite individuals who might be deemed qualified to speak in such a session, based on their specialty, or other consideration. </p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ddcd103 elementor-widget elementor-widget-heading" data-id="ddcd103" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">2. Parallel, Thematic Small Group Sessions </p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-8a99c8f elementor-widget elementor-widget-heading" data-id="8a99c8f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">	These will consist of presentation of a number of papers addressing a similar theme, or sub-theme, to a smaller audience.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d353b27 elementor-widget elementor-widget-heading" data-id="d353b27" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">CONFERENCE OUTPUTS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-9dc19b1 elementor-widget elementor-widget-heading" data-id="9dc19b1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Resolutions and a Declaration on a viable political arrangement between Lesotho and RSA, with high prospects to improve the quality of life among the people of Lesotho and South Africa</p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-5cd7305 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5cd7305" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7a6f9b4" data-id="7a6f9b4" data-element_type="column" data-settings='{"background_background":"classic"}'>
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c6b98e7 elementor-widget elementor-widget-heading" data-id="c6b98e7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">Valid 2021 paid up members and Associates</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-88d17f4 elementor-widget elementor-widget-heading" data-id="88d17f4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">EARLY BIRD (payment received before/on 1st December 2021)</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-cd977a2 elementor-widget elementor-widget-heading" data-id="cd977a2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">R1 200.00</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a0ad4f2 elementor-widget elementor-widget-heading" data-id="a0ad4f2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">LATE PAYMENT (payment received after 31st January 2022)</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d4e82bc elementor-widget elementor-widget-heading" data-id="d4e82bc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">R1 500.00</h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4d9f28d" data-id="4d9f28d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7c8693d elementor-widget elementor-widget-heading" data-id="7c8693d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">Non-members </h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ac24fbd elementor-widget elementor-widget-heading" data-id="ac24fbd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">EARLY BIRD (payment received before/on 1st December 2021)</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b24d2c1 elementor-widget elementor-widget-heading" data-id="b24d2c1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">R1 500.00</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-86f9e88 elementor-widget elementor-widget-heading" data-id="86f9e88" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">LATE PAYMENT (payment received after 31st January 2022)</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3c9de55 elementor-widget elementor-widget-heading" data-id="3c9de55" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">R2 000.00</h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-e2873da" data-id="e2873da" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-36a25d6 elementor-widget elementor-widget-heading" data-id="36a25d6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">Daily rate </h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-36ce6c9 elementor-widget elementor-widget-heading" data-id="36ce6c9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">EARLY BIRD (payment received before/on 1st December 2021)</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b31b01d elementor-widget elementor-widget-heading" data-id="b31b01d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">R450.00</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e5f2d5c elementor-widget elementor-widget-heading" data-id="e5f2d5c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">LATE PAYMENT (payment received after 31st January 2022)</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b737c7a elementor-widget elementor-widget-heading" data-id="b737c7a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">R500.00</h3>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f760a62 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f760a62" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f6f7e8b" data-id="f6f7e8b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-4faf030 elementor-widget elementor-widget-heading" data-id="4faf030" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">DOWNLOAD TEMPLATE</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-23c2c12 elementor-widget elementor-widget-heading" data-id="23c2c12" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Examples of Workshop Content</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ec28ead elementor-align-left elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ec28ead" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-file-word"></i>						</span>
+										<span class="elementor-icon-list-text">Abstract for Oral/Poster/Workshop Presentation (Submission Deadline:  1st November 2021)</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="#">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-file-word"></i>						</span>
+										<span class="elementor-icon-list-text">Full Paper Publication - Word Format (Submission Deadline: 31st January 2022)</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-975cdd0 elementor-widget elementor-widget-heading" data-id="975cdd0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">IMPORTANT DATES</h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-90130c4 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="90130c4" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9f6a931" data-id="9f6a931" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-84095bd elementor-widget elementor-widget-heading" data-id="84095bd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">Online submission of abstracts of papers to be presented at conference
+(Do not submit full paper yet)
+</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c0041f8 elementor-widget elementor-widget-heading" data-id="c0041f8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">Review of abstracts completed (Authors are informed about their papers are accepted or not)</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-842b3fe elementor-widget elementor-widget-heading" data-id="842b3fe" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">Submission of full conference papers
+(For participants who would like their papers to be published)
+</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ff8449f elementor-widget elementor-widget-heading" data-id="ff8449f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">Online Conference Registration Opens
+</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ba1ea17 elementor-widget elementor-widget-heading" data-id="ba1ea17" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">Three-day Online Conference Begins </h5>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-8b1aa75" data-id="8b1aa75" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-850fc12 elementor-widget elementor-widget-heading" data-id="850fc12" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">1st November 2021
+</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6749f4d elementor-widget elementor-widget-heading" data-id="6749f4d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">30th November 2021</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b43fdaa elementor-widget elementor-widget-heading" data-id="b43fdaa" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">31st January 2022
+</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-71710d4 elementor-widget elementor-widget-heading" data-id="71710d4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">1st October 2022
+</h5>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a22254c elementor-widget elementor-widget-heading" data-id="a22254c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-small">19-21 March 2022</h5>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-b41d4dd elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="b41d4dd" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-befb8e4" data-id="befb8e4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-f5738bb elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="f5738bb" data-element_type="widget" data-settings='{"navigation":"both","autoplay":"yes","pause_on_hover":"yes","pause_on_interaction":"yes","autoplay_speed":5000,"infinite":"yes","speed":500}' data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper-container" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper">
+								<div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/cropped-nul-icon-1-150x150.png" alt="cropped-nul-icon"></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/index-150x150.png" alt="index"></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img class="swiper-slide-image" src="https://ninja95-cyber.github.io/afdelwp/wp-content/uploads/2021/08/UFS-150x150.jpg" alt="UFS"></figure></div>			</div>
+												<div class="swiper-pagination"></div>
+													<div class="elementor-swiper-button elementor-swiper-button-prev">
+						<i class="eicon-chevron-left" aria-hidden="true"></i>
+						<span class="elementor-screen-only">Previous</span>
+					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next">
+						<i class="eicon-chevron-right" aria-hidden="true"></i>
+						<span class="elementor-screen-only">Next</span>
+					</div>
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7093e83 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="7093e83" data-element_type="section" data-settings='{"background_background":"classic"}'>
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f3570aa" data-id="f3570aa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-535943a elementor-align-center elementor-widget elementor-widget-button" data-id="535943a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-hang" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-arrow-right"></i>			</span>
+						<span class="elementor-button-text">Click here to submit Abstract</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+					</div>
+		
+</div>
+    <footer id="colophon" class="site-footer">
+
+        
+
+        <div class="bottom-footer">
+            <div class="mid-content clearfix">
+                <div class="copy-right">
+                    © 2021 AFDeL  
+                </div>
+                <div class="site-info">
+                    WordPress Theme:
+                    <a href="https://accesspressthemes.com/wordpress-themes/accesspress-parallax" title="WordPress Free Themes" target="_blank">AccessPress Parallax</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div id="go-top"><a href="#page"><i class="fa fa-angle-up"></i></a></div>
+<link rel="stylesheet" id="e-animations-css" href="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all">
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/jarallax.js" id="jarallax-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/jquery.scrollTo.min.js" id="scrollto-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/jquery.localScroll.min.js" id="jquery-localscroll-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/jquery.nav.js" id="accesspress-parallax-parallax-nav-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/isotope.pkgd.js" id="isotope-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/waypoint.js" id="waypoint-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/jquery.easing.min.js" id="jquery-easing-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/jquery.fitvids.js" id="jquery-fitvid-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/nivo-lightbox.min.js" id="nivo-lightbox-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/slick.js" id="slick-js"></script>
+<script type="text/javascript" id="accesspress-parallax-custom-js-extra">
+/* <![CDATA[ */
+var ap_params = {"accesspress_show_pager":"true","accesspress_show_controls":"true","accesspress_auto_transition":"true","accesspress_slider_transition":"false","accesspress_slider_speed":"1000","accesspress_slider_pause":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/themes/accesspress-parallax/js/custom.js" id="accesspress-parallax-custom-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/ninja95-cyber.github.io\/afdelwp\/wp-admin\/admin-ajax.php","nonce":"e205cc1011","urls":{"assets":"https:\/\/ninja95-cyber.github.io\/afdelwp\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/ninja95-cyber.github.io\/afdelwp\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor-pro/assets/js/frontend.min.js" id="elementor-pro-frontend-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-includes/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js" id="swiper-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js" id="share-link-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js" id="elementor-dialog-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.3","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true,"form-submissions":true,"video-playlist":true},"urls":{"assets":"https:\/\/ninja95-cyber.github.io\/afdelwp\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":57,"title":"AFDeL","excerpt":"","featuredImage":false}};
+</script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js" id="pro-preloaded-elements-handlers-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js" id="preloaded-modules-js"></script>
+<script type="text/javascript" src="https://ninja95-cyber.github.io/afdelwp/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js" id="e-sticky-js"></script>
+</body>
+</html>
